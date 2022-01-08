@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: goldenrod
+}
+
+header{
+    flex-direction: row;
+    display: flex;
+    height: 30vh;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+header>div>img{
+    height: 20vh;
+
+}
+main{
+     flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+main > aside{
+    height: 60vh;
+    width: 100vh;
+    flex-direction: row;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+
+ main>section{
+       width: 100vh;
+        flex-direction: row;
+        display: flex;
+        background-color: black;
+        justify-content: space-around;
+        align-items: center;
+        
+ }
+
+ main>aside>h3{
+    height: 60vh;
+    width: 100vh;
+    flex-direction: row;
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ main>aside>img{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+ }
+
+footer{
+    flex-direction: row;
+    display: flex;
+    height: 20vh;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+
+
+}
