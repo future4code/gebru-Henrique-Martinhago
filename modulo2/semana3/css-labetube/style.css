@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 60px;
+    background-color: rgb(124, 18, 67);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+section{
+    background-color: rgb(233, 205, 215);
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    }
+
+    section > .videos {
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        justify-items: center;
+    }
+
+
+
+footer{
+    height: 60px;
+    background-color:rgb(124, 18, 67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
