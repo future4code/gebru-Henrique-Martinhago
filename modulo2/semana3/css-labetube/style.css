@@ -4,39 +4,87 @@
 }
 
 header{
-    height: 60px;
-    background-color: rgb(124, 18, 67);
+    height: 10vw;
     display: flex;
+    flex-direction: row;
+    background-color: rgb(124, 18, 67);
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    
 }
 
+header > h2{
+    margin-left: 10px;
+}
+
+header > input {
+    margin-right: 10px;
+}
 
 section{
+    height: 100vh;
     background-color: rgb(233, 205, 215);
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 20px;
-    column-gap: 20px;
-    }
+   border: solid purple;
+     }
 
-    section > .videos {
-        width: 50px;
+
+        
+
+     .videos {
+        height: 20vw;
+        width: 40vh;
+        margin-top: 10px;
+        border: 3px solid purple;
         display: flex;
         flex-direction: column;
-        margin-left: 20px;
+        margin-left:20px;
+        margin-right: 20px;
         justify-items: center;
+        align-items: center;
     }
 
-
+    section > div > video{
+        width: 240px;
+        height: 140px;
+    }
+    
 
 footer{
-    height: 60px;
+    height: 10vw;
     background-color:rgb(124, 18, 67);
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
+
+ @media screen and ( max-device-width: 915px ) {
+     section{
+         height: 300vh;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         
+     }
+
+     .videos{
+        width: 50vw;
+         height: 20vh;
+         display: flex;
+         flex-direction: column;
+     }
+     section > div > video{
+         width: 30vw;
+         height: 60vh;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+     }
+    }
+   
+ 
+     
+ 
