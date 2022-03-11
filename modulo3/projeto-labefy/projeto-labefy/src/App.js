@@ -27,6 +27,8 @@ class App extends React.Component {
        })
 
        alert('')
+   }catch (err){
+     
    }
   }
   
