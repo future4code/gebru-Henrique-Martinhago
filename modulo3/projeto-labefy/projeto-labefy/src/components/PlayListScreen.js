@@ -1,6 +1,14 @@
 import React from "react";
 
 
-class App extends React.Component{
-    
+
+class PlayListScreen extends React.Component{
+  state = { 
+      list:[]
+  }
+
+  
+
 }
+
+export default PlayListScreen
