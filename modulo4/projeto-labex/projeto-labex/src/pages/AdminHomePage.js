@@ -1,20 +1,14 @@
-import React, {useState,useEffect} from "react";
-import axios from "axios";
-import styled from "styled-components";
-import applicationFormPage from "./ApplicationFormPage"
-import CreatTripPage from "./CreatTripPage"
-import LoginPage from "./LoginPage"
-import ListTripsPage from "./ListTripsPage"
-import TripDetailsPage from "./TripDetailsPage"
+import React from "react";
+
 
 const AdmimHomePage =() => {
 
     return (
          <div> 
-          <h1> LABEX </h1>
+          <h1> LABEX Administrador</h1>
           <div>
-              <button> </button>
               <button>  </button>
+              
           </div>
          </div> 
 

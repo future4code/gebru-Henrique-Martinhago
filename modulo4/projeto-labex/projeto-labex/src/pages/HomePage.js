@@ -1,24 +1,23 @@
-import React, {useState,useEffect} from "react";
-import axios from "axios";
-import styled from "styled-components";
-import applicationFormPage from "./ApplicationFormPage"
-import CreatTripPage from "./CreatTripPage"
-import LoginPage from "./LoginPage"
-import ListTripsPage from "./ListTripsPage"
-import TripDetailsPage from "./TripDetailsPage"
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import {goToTripsPage} from "../routes/Coordinator";
+import { goToLoginPage} from "../routes/Coordinator";
+
+
 
 const HomePage =() => {
+    const navigate = useNavigate()
 
     return (
          <div> 
-          <h1> LABEX </h1>
+          <h1> HomePage - LABEX </h1>
           <div>
-              <button> Viagens </button>
-              <button> Login Administrador </button>
+              <button onClick={()=> goToTripsPage ( navigate) } > Viagens </button>
+              <button onAuxClick={() => goToLoginPage ( navigate) } > Login Administrador </button>
           </div>
          </div> 
 
-    )
-}
+    );
+};
 
 export default HomePage 
