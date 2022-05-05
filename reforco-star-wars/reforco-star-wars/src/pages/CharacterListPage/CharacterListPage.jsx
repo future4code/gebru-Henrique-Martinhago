@@ -25,6 +25,8 @@ function CharacterListPage (props) {
         })
     }
 
+    
+    console.log(characterList ) 
     return (
 
 <div>

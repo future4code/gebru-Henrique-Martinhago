@@ -14,12 +14,12 @@ function App() {
   function goToListPage() {
     setPage("List")
   }
-
+  
   function selectPage() {
-    if ( page === "list"){
-      return <CharacterDetailsPage goToDetailsPage={goToDetailsPage}/>
+    if ( page === "List"){
+      return <CharacterListPage goToDetailsPage={goToDetailsPage } url={detailsUrl}/>
     } else {
-      return <CharacterListPage goToListPage={goToListPage} url={detailsUrl}/>
+      return <CharacterDetailsPage  goToListPage={goToListPage}/>
     }
   }
   return (
