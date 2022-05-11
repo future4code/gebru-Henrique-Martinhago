@@ -1,4 +1,4 @@
-import axios from "axios";
+import {getCharacterDetails, getPlanetDetails } from "../../services/request"
 import React, {useState, useEffect} from "react";
 
 
@@ -7,33 +7,15 @@ function CharacterDetailsPage (props){
     const [planet, setPlanet] = useState({})
 
     useEffect(() => {
-        getCharacterDetails()
+        getCharacterDetails(props.url, setDetails)
     }, [props.url])
 
     useEffect (() => {
-        getPlanetDetails ()
+        getPlanetDetails (details.homeworld, setPlanet)
     }, [details.homeworld] )
 
-    function getCharacterDetails() {
-        axios.get(props.url)
-        .then((response) => {
-            console.log(response.data)
-            setDetails(response.data)
-        }) 
-        .catch((error) => console.log(error.message))
-    }
-
-    function getPlanetDetails() {
-        axios.get(details.homeworld) 
-        .then((response) => {
-            console.log(response.data)
-            setPlanet(response.data)
-        }) 
-        .catch((error) => console.log(error.message))
-    }
-
-    return ( 
-<div>
+    
+    return ( <div>
         <h1> Detalhes de Personagem</h1>
         <p> Nome: { details.name}</p>
         <p> Planeta de origem: {planet.name} </p> 

@@ -1,20 +1,20 @@
 import React, { useState, useEffect} from "react";
+import {getCharacterList} from " ../../services/requests"
+import { CharacterCard } from "./Styled";
+import {BASE_URL} from "../../constants/urls.js"
 import axios from "axios";
-import { BASE_URL} from "../../constants/urls.js"
-import { CharacterCard } from "./Styled.js";
 
-
-function CharacterListPage (props) {
+function CharacterListPage(props){
     const [characterList, setCharacterList] = useState([])
 
-    function getCharacterList(){
+    function getCharacterList() {
         axios.get(`${BASE_URL}/people/`)
-        .then((response) => setCharacterList(response.data.results))
-        .catch((error) => console.log("Erro:", error.message))
+        .then((response) => setCharacterList( response.data.results))
+        .catch((error) => console.log("Erro:", error.message ))
     }
 
     useEffect(() => {
-        getCharacterList()
+        getCharacterList(setCharacterList)
     }, [] )
 
     
@@ -25,11 +25,7 @@ function CharacterListPage (props) {
         })
     }
 
-    
-    console.log(characterList ) 
-    return (
-
-<div>
+    return (<div>
        <h1> Lista de Personagem </h1>
        {showCharacters()}
     </div>
