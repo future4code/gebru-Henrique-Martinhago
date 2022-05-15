@@ -19,7 +19,7 @@ function App() {
     if ( page === "List"){
       return <CharacterListPage goToDetailsPage={goToDetailsPage } url={detailsUrl}/>
     } else {
-      return <CharacterDetailsPage  goToListPage={goToListPage}/>
+      return <CharacterDetailsPage  goToListPage={goToListPage} url ={detailsUrl}/>
     }
   }
   return (

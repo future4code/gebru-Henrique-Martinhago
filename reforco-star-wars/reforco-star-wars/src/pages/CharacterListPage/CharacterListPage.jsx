@@ -1,6 +1,5 @@
 import React, { useState, useEffect} from "react";
-import {getCharacterList} from " ../../services/requests"
-import { CharacterCard } from "./Styled";
+import { CharacterCard } from "./StyledList";
 import {BASE_URL} from "../../constants/urls.js"
 import axios from "axios";
 

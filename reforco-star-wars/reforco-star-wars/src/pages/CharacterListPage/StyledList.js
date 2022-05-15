@@ -10,3 +10,4 @@ export const CharacterCard = styled.div `
      background-color: lightblue;
  }
 `
+
