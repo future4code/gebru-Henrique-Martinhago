@@ -59,14 +59,14 @@ if (idade =>18){
 }    
 
 // 2)  //
- const periodoQueEstuda = prompt("Em qual periodo voce estuda? M (matutino), V (vespertino) , N ( noturno) ").toUpperCase
+ /*const periodoQueEstuda = prompt("Em qual periodo voce estuda? M (matutino), V (vespertino) , N ( noturno) ").toUpperCase
  if (periodoQueEstuda === "M" ){
      console,log("Bom dia")
  } else if (periodoQueEstuda === "V"){
      console.log("Boa tarde")
  } else if (periodoQueEstuda === "N"){
      console.log("Boa noite")
- }   
+ }   */
 
  // 3  //  
  const periodoQueEstuda = prompt("Em qual periodo voce estuda? M (matutino), V (vespertino) , N ( noturno) ")
