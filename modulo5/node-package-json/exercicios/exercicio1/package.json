@@ -1,0 +1,14 @@
+{
+  "name": "package-json",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start-1": "clear && node ./exercicio1./index.js",
+    "start-2": "clear && node ./exercicio2./index.js",
+    "start-3": "clear && node ./exercicio3./index.js"
+  },
+  "keywords": [],
+  "author": "Henrique Martignago",
+  "license": "ISC",
+  "description": ""
+}
